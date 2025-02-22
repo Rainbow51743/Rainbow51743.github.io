@@ -23,6 +23,7 @@ navbar-links:
   Architecture: "architecture"
   Graphic Design: "graphicdesign"
   Physical Art: "physicalart"
+  Testing: "testing"
 
 ################
 # --- Logo --- #
