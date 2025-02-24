@@ -86,13 +86,32 @@ img {vertical-align: middle;}
   user-select: none;
 }
 
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+  
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+  
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -125,7 +144,22 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #005770;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
 .active, .dot:hover {
+  background-color: #b4d4de;
+}
+
+.active2, .dot2:hover {
   background-color: #b4d4de;
 }
 
@@ -241,23 +275,23 @@ img {vertical-align: middle;}
   <div class="text">Exploded Axon</div>
 </div>
  
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
+<a class="prev2" onclick="plusSlides(-1)">❮</a>
+<a class="next2" onclick="plusSlides(1)">❯</a>
 
 </div>
  
 <br>
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-  <span class="dot" onclick="currentSlide(6)"></span> 
-  <span class="dot" onclick="currentSlide(7)"></span> 
-  <span class="dot" onclick="currentSlide(8)"></span> 
-  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot2" onclick="currentSlide(1)"></span> 
+  <span class="dot2" onclick="currentSlide(2)"></span> 
+  <span class="dot2" onclick="currentSlide(3)"></span> 
+  <span class="dot2" onclick="currentSlide(4)"></span> 
+  <span class="dot2" onclick="currentSlide(5)"></span> 
+  <span class="dot2" onclick="currentSlide(6)"></span> 
+  <span class="dot2" onclick="currentSlide(7)"></span> 
+  <span class="dot2" onclick="currentSlide(8)"></span> 
+  <span class="dot2" onclick="currentSlide(9)"></span> 
 </div>
 </div>
 
