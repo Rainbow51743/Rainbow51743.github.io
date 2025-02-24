@@ -98,11 +98,13 @@ img {vertical-align: middle;}
 <body>
 
 <div class="slideshow-container">
-
   <div class="mySlides">
-  <div class="numbertext">1 / 4</div>
-  <embed src="{{ 'assets/PDFs/Vertical Home/Lawson-Vertical Home V4 1.pdf' | relative_url }}" style="width:100%; height:100%;" alt="Unable to load">
-  <div class="text">Floor Plan 1</div>
+    <div class="numbertext">1 / 4</div>
+    <object id="pdfObject" data="{{ 'assets/PDFs/Vertical Home/Lawson-Vertical Home V4 1.pdf' | relative_url }}" type="application/pdf" width="100%" style="height:auto;">
+      <p>Your browser does not support PDFs. <a href="{{ 'assets/PDFs/Vertical Home/Lawson-Vertical Home V4 1.pdf' | relative_url }}">Download the PDF</a>.</p>
+    </object>
+    <div class="text">Floor Plan 1</div>
+  </div>
 </div>
 
 <div class="mySlides">
@@ -162,6 +164,22 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+
+ window.onload = function() {
+    var pdfObject = document.getElementById('pdfObject');
+    pdfObject.onload = function() {
+      var pdfDoc = pdfObject.contentDocument || pdfObject.contentWindow.document;
+      var pdf = pdfDoc.querySelector("embed");
+      var naturalWidth = pdf.width;
+      var naturalHeight = pdf.height;
+
+      var aspectRatio = naturalHeight / naturalWidth;
+      var containerWidth = pdfObject.offsetWidth;
+      var containerHeight = containerWidth * aspectRatio;
+
+      pdfObject.style.height = containerHeight + "px"; 
+    }
+  };
 }
 </script>
 
