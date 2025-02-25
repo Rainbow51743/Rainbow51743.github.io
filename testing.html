@@ -235,17 +235,17 @@ img {vertical-align: middle;}
     function showSlides(n, no) {
       var i;
       var x = document.getElementsByClassName(slideId[no]);
-      var d = document.getElementsByClassName(dot[no]);
+      var dt = document.getElementsByClassName(dot[no]);
       if (n > x.length) {slideIndex[no] = 1}    
       if (n < 1) {slideIndex[no] = x.length}
       for (i = 0; i < x.length; i++) {
          x[i].style.display = "none";  
       }
-      for (i = 0; i < d.length; i++) {
-        d[i].className = d[i].className.replace(" active", "");
+      for (i = 0; i < dt.length; i++) {
+        dt[i].className = dt[i].className.replace(" active", "");
       }
       x[slideIndex[no]-1].style.display = "block";
-      d[slideIndex[no]-1].className += " active";
+      dt[slideIndex[no]-1].className += " active";
     }
     </script>
 
