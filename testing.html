@@ -45,6 +45,9 @@ layout: default
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
+.mySlides2 {display: none}
+.mySlides3 {display: none}
+  
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -148,7 +151,61 @@ img {vertical-align: middle;}
   <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_4.png' | relative_url }}" style="width:100%">
   <div class="text">Exploded Axon</div>
 </div>
- 
+   
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+   
+<div class="mySlides2">
+  <div class="numbertext">1 / 4</div>
+  <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_1.png' | relative_url }}" style=width:100%">
+  <div class="text">Floor Plan 1</div>
+</div>
+
+<div class="mySlides2">
+  <div class="numbertext">2 / 4</div>
+  <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_2.png' | relative_url }}" style="width:100%">
+  <div class="text">Floor Plan 2</div>
+</div>
+
+<div class="mySlides2">
+  <div class="numbertext">3 / 4</div>
+  <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_3.png' | relative_url }}" style="width:100%">
+  <div class="text">Section</div>
+</div>
+
+<div class="mySlides2">
+  <div class="numbertext">4 / 4</div>
+  <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_4.png' | relative_url }}" style="width:100%">
+  <div class="text">Exploded Axon</div>
+</div>
+   
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+   
+<div class="mySlides3">
+  <div class="numbertext">1 / 4</div>
+  <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_1.png' | relative_url }}" style=width:100%">
+  <div class="text">Floor Plan 1</div>
+</div>
+
+<div class="mySlides3">
+  <div class="numbertext">2 / 4</div>
+  <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_2.png' | relative_url }}" style="width:100%">
+  <div class="text">Floor Plan 2</div>
+</div>
+
+<div class="mySlides3">
+  <div class="numbertext">3 / 4</div>
+  <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_3.png' | relative_url }}" style="width:100%">
+  <div class="text">Section</div>
+</div>
+
+<div class="mySlides3">
+  <div class="numbertext">4 / 4</div>
+  <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_4.png' | relative_url }}" style="width:100%">
+  <div class="text">Exploded Axon</div>
+</div>
+   
 <a class="prev" onclick="plusSlides(-1)">❮</a>
 <a class="next" onclick="plusSlides(1)">❯</a>
 
@@ -167,38 +224,32 @@ img {vertical-align: middle;}
 <div class="content">
 <h3>Verticle House</h3><p>And you've lost all your common sense... what a coincidence</p></div>
   
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
+ <script>
+    var slideIndex = [1,1,1;
+    var slideId = ["mySlides", "mySlides2", "mySlides3"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+    </script>
 
 </body>
 </html> 
 
-And now there is next below this! Isn't that cool?
+And now there is text below this! Isn't that cool?
 <hr>
 Yay
