@@ -53,7 +53,16 @@ title: Architecture
 <style>
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
+.mySlides1 {display: none}
+.mySlides2 {display: none}
+.mySlides3 {display: none}
+.mySlides4 {display: none}
+.mySlides5 {display: none}
+.mySlides6 {display: none}
+.mySlides7 {display: none}
+.mySlides8 {display: none}
+.mySlides9 {display: none}
+.mySlides10 {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -133,25 +142,25 @@ img {vertical-align: middle;}
  <div class="Slide1">
  <div class="slideshow-container">
 
-<div class="mySlides">
+<div class="mySlides1">
   <div class="numbertext">1 / 4</div>
   <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_1.png' | relative_url }}" style=width:100%">
   <div class="text">Floor Plan 1</div>
 </div>
 
-<div class="mySlides">
+<div class="mySlides1">
   <div class="numbertext">2 / 4</div>
   <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_2.png' | relative_url }}" style="width:100%">
   <div class="text">Floor Plan 2</div>
 </div>
 
-<div class="mySlides">
+<div class="mySlides1">
   <div class="numbertext">3 / 4</div>
   <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_3.png' | relative_url }}" style="width:100%">
   <div class="text">Section</div>
 </div>
 
-<div class="mySlides">
+<div class="mySlides1">
   <div class="numbertext">4 / 4</div>
   <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_4.png' | relative_url }}" style="width:100%">
   <div class="text">Exploded Axon</div>
@@ -179,55 +188,55 @@ img {vertical-align: middle;}
  <div class="Slide2">
  <div class="slideshow-container">
 
-<div class="mySlides">
+<div class="mySlides2">
   <div class="numbertext">1 / 9</div>
   <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_1.png' | relative_url }}" style=width:100%">
   <div class="text">Floor Plan 1</div>
 </div>
 
-<div class="mySlides">
+<div class="mySlides2">
   <div class="numbertext">2 / 9</div>
   <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_2.png' | relative_url }}" style="width:100%">
   <div class="text">Floor Plan 2</div>
 </div>
 
-<div class="mySlides">
+<div class="mySlides2">
   <div class="numbertext">3 / 9</div>
   <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_3.png' | relative_url }}" style="width:100%">
   <div class="text">Section</div>
 </div>
 
-<div class="mySlides">
+<div class="mySlides2">
   <div class="numbertext">4 / 9</div>
   <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_4.png' | relative_url }}" style="width:100%">
   <div class="text">Exploded Axon</div>
 </div>
 
-<div class="mySlides">
+<div class="mySlides2">
   <div class="numbertext">5 / 9</div>
   <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_5.png' | relative_url }}" style=width:100%">
   <div class="text">Floor Plan 1</div>
 </div>
 
-<div class="mySlides">
+<div class="mySlides2">
   <div class="numbertext">6 / 9</div>
   <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_6.png' | relative_url }}" style="width:100%">
   <div class="text">Floor Plan 2</div>
 </div>
 
-<div class="mySlides">
+<div class="mySlides2">
   <div class="numbertext">7 / 9</div>
   <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_7.png' | relative_url }}" style="width:100%">
   <div class="text">Section</div>
 </div>
 
-<div class="mySlides">
+<div class="mySlides2">
   <div class="numbertext">8 / 9</div>
   <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_8.png' | relative_url }}" style="width:100%">
   <div class="text">Exploded Axon</div>
 </div>
 
-<div class="mySlides">
+<div class="mySlides2">
   <div class="numbertext">9 / 9</div>
   <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_9.png' | relative_url }}" style="width:100%">
   <div class="text">Exploded Axon</div>
@@ -257,65 +266,26 @@ img {vertical-align: middle;}
 <h3>Sectional House</h3><p>I can spell Sectional though!</p></div>
 
 <script>
-let slideIndex = 1;
-showSlides(slideIndex);
+    var slideIndex = [1,1];
+    var slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-</script>
-
-  <script>
-let slideIndex2 = 1;
-showSlides2(slideIndex2);
-
-function plusSlides2(n) {
-  showSlides2(slideIndex2 += n);
-}
-
-function currentSlide2(n) {
-  showSlides2(slideIndex2 = n);
-}
-
-function showSlides2(n) {
-  let i2;
-  let slides2 = document.getElementsByClassName("mySlides");
-  let dots2 = document.getElementsByClassName("dot");
-  if (n > slides2.length) {slideIndex2 = 1}    
-  if (n < 1) {slideIndex2 = slides2.length}
-  for (i2 = 0; i2 < slides.length; i2++) {
-    slides2[i2].style.display = "none";  
-  }
-  for (i2 = 0; i < dots2.length; i++) {
-    dots2[i2].className = dots2[i2].className.replace(" active", "");
-  }
-  slides2[slideIndex2-1].style.display = "block";  
-  dots2[slideIndex2-1].className += " active";
-}
-
-</script>
-
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 2) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+    </script>
 </body>
 </html> 
 
