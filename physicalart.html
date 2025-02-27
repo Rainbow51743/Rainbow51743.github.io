@@ -12,9 +12,15 @@ title: Physical Art
   grid-template-areas:
     "header header header"
     "Slide1 Slide1 Desc1"
-    "Desc2 Slide2 Slide2"
-    "Slide3 Slide3 Desc3"
-    "Desc4 Slide4 Slide4";
+    "Desc1v2 Slide1v2 Slide1v2"
+    "Slide2 Slide2 Desc2"
+    "Desc3 Slide3 Slide3"
+    "Slide4 Slide4 Desc4"
+    "median median median"
+    "Desc5 Slide5 Slide5"
+    "Slide6 Slide6 Desc6"
+    "Desc7 Slide7 Slide7"
+    "Slide8 Slide8 Desc8";
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5px;
   background-color: #FFFFFF;
@@ -34,6 +40,12 @@ title: Physical Art
 .myGrid > div.Desc1 {
   grid-area: Desc1;
 }
+.myGrid > div.Slide1v2 {
+  grid-area: Slide1v2;
+}
+.myGrid > div.Desc1 {
+  grid-area: Desc1;
+} 
 .myGrid > div.Slide2 {
   grid-area: Slide2;
 }
@@ -52,6 +64,33 @@ title: Physical Art
 .myGrid > div.Desc4 {
   grid-area: Desc4;
 }
+.myGrid > div.Slide5 {
+  grid-area: Slide5;
+}
+.myGrid > div.Desc5 {
+  grid-area: Desc5;
+}
+.myGrid > div.median {
+  grid-area: median
+}
+.myGrid > div.Slide6 {
+  grid-area: Slide6;
+}
+.myGrid > div.Desc6 {
+  grid-area: Desc6;
+}
+.myGrid > div.Slide7 {
+  grid-area: Slide7;
+}
+.myGrid > div.Desc7 {
+  grid-area: Desc7;
+}
+.myGrid > div.Slide8 {
+  grid-area: Slide8;
+}
+.myGrid > div.Desc8 {
+  grid-area: Desc8;
+}
 </style>
 </head>
   
@@ -60,7 +99,7 @@ title: Physical Art
 <style>
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4 {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -111,88 +150,213 @@ img {vertical-align: middle;}
    
 <div class="myGrid">
   <div class="Slide1">
-    <img src="{{ 'assets/img/Physical Art/Flower Hand.jpg' | relative_url }}" style=width:100%">
+    <img src="{{ 'assets/img/Physical Art/Duck painting.jpg' | relative_url }}" style=width:100%">
   </div>
 
   <div class="Desc1">
+    <h3>"Who Put the Duck on the Wall?"</h3>
+    <p>Acrylic Paint on BFK </p>
+  </div> 
+  
+  <div class="Slide1v2">
+    <img src="{{ 'assets/img/Physical Art/Hand2.jpg' | relative_url }}" style=width:100%">
+  </div>
+
+  <div class="Desc1v2">
+    <h3>Positioned Hand</h3>
+    <p>Watercolor</p>
+  </div> 
+    
+  <div class="Slide2">
+    <img src="{{ 'assets/img/Physical Art/Flower Hand.jpg' | relative_url }}" style=width:100%">
+  </div>
+
+  <div class="Desc2">
     <h3>Flower in Hand</h3>
     <p>Watercolor</p>
   </div> 
 
-  <div class="Slide2">
+  <div class="Slide3">
     <img src="{{ 'assets/img/Physical Art/Lawson_Vintage_Tool.png' | relative_url }}" style=width:100%">
   </div>
 
-  <div class="Desc2">
+  <div class="Desc3">
     <h3>Rotary Egg Beater Study</h3>
-    <p>Pencil</p>
+    <p>Pencil on BFK</p>
   </div> 
 
-  <div class="Slide3">
+  <div class="Slide4">
     <img src="{{ 'assets/img/Physical Art/Lawson, Savanna- Chair Axon 1.jpg' | relative_url }}" style=width:100%">
   </div>
 
-  <div class="Desc3">
+  <div class="Desc4">
     <h3>Chair Axonometric</h3>
     <p>Pencil</p>
   </div> 
 
-  <div class="Slide4">
+  <div class="Slide5">
     <div class="slideshow-container">
-      <div class="mySlides">
+      <div class="mySlides1">
         <div class="numbertext">1 / 3</div>
-        <img src="{{ 'assets/img/Physical Art/Constructing the Image/Lawson-1.1A-Constructing the ImageV4_Page_6.png' | relative_url }}" style=width:100%">
+        <img src="{{ 'assets/img/Physical Art/Constructing the Image/Lawson-1.1A-Constructing the ImageV4_Page_5.png' | relative_url }}" style=width:100%">
       </div>
 
-      <div class="mySlides">
+      <div class="mySlides1">
         <div class="numbertext">2 / 3</div>
-        <img src="{{ 'assets/img/Physical Art/Constructing the Image/Lawson-1.1A-Constructing the ImageV4_Page_5.png' | relative_url }}" style="width:100%">
+        <img src="{{ 'assets/img/Physical Art/Constructing the Image/Lawson-1.1A-Constructing the ImageV4_Page_6.png' | relative_url }}" style="width:100%">
       </div>
 
-      <div class="mySlides">
+      <div class="mySlides1">
         <div class="numbertext">3 / 3</div>
         <img src="{{ 'assets/img/Physical Art/Constructing the Image/Lawson-1.1A-Constructing the ImageV4_Page_1.png' | relative_url }}" style="width:100%">
       </div>
 
-      <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-      <a class="next" onclick="plusSlides(1)">&#10095</a>
+      <a class="prev" onclick="plusSlides(-1,0)">&#10094</a>
+      <a class="next" onclick="plusSlides(1,0)">&#10095</a>
+     </div>
+  </div>
+  
+  <div class="Desc5">
+    <h3>Constructing the Image</h3>
+    <p>Cardstock</p>
+  </div>
+
+  <div class="median">
+    <hr>
+    <h3>Drawings from my Sketchbooks</h3>
+  </div>
+  
+  <div class="Slide6">
+    <div class="slideshow-container">
+      <div class="mySlides2">
+        <div class="numbertext">1 / 4</div>
+        <img src="{{ 'assets/img/Physical Art/Hands/PXL_20250226_033517086.MP~2.jpg' | relative_url }}" style=width:100%">
+      </div>
+
+      <div class="mySlides2">
+        <div class="numbertext">2 / 4</div>
+        <img src="{{ 'assets/img/Physical Art/Hands/PXL_20250226_033314837.MP~2.jpg' | relative_url }}" style="width:100%">
+      </div>
+
+      <div class="mySlides2">
+        <div class="numbertext">3 / 4</div>
+        <img src="{{ 'assets/img/Physical Art/Hands/PXL_20250226_033531258.MP~2.jpg' | relative_url }}" style="width:100%">
+      </div>
+
+      <div class="mySlides2">
+        <div class="numbertext">4 / 4</div>
+        <img src="{{ 'assets/img/Physical Art/Hands/PXL_20250226_033651492.MP~2.jpg' | relative_url }}" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1,1)">&#10094</a>
+      <a class="next" onclick="plusSlides(1,1)">&#10095</a>
      </div>
   </div>
 
-  <div class="Desc4">
-    <h3>Constructing the Image</h3>
-    <p>Cardstock</p>
-  </div> 
+  <div class="Desc6">
+    <h3>Hands</h3>
+    <p>Pencil</p>
+  </div>
+
+  <div class="Slide7">
+    <div class="slideshow-container">
+      <div class="mySlides3">
+        <div class="numbertext">1 / 3</div>
+        <img src="{{ 'assets/img/Physical Art/Architecture/PXL_20250226_033001556.MP~2.jpg' | relative_url }}" style=width:100%">
+      </div>
+
+      <div class="mySlides3">
+        <div class="numbertext">2 / 3</div>
+        <img src="{{ 'assets/img/Physical Art/Architecture/PXL_20250226_032951998.MP~2.jpg' | relative_url }}" style="width:100%">
+      </div>
+
+      <div class="mySlides3">
+        <div class="numbertext">3 / 3</div>
+        <img src="{{ 'assets/img/Physical Art/Architecture/PXL_20250226_033034856.MP~2.jpg' | relative_url }}" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1,2)">&#10094</a>
+      <a class="next" onclick="plusSlides(1,2)">&#10095</a>
+     </div>
+  </div>
+
+  <div class="Desc7">
+    <h3>Architecture</h3>
+    <p>Pencil</p>
+  </div>
+
+  <div class="Slide8">
+    <div class="slideshow-container">
+      <div class="mySlides4">
+        <div class="numbertext">1 / 7</div>
+        <img src="{{ 'assets/img/Physical Art/People/PXL_20250226_033055269.MP~2.jpg' | relative_url }}" style=width:100%">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">2 / 7</div>
+        <img src="{{ 'assets/img/Physical Art/People/PXL_20250226_032725777.MP~2.jpg' | relative_url }}" style="width:100%">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">3 / 7</div>
+        <img src="{{ 'assets/img/Physical Art/People/PXL_20250226_033026539.MP~2.jpg' | relative_url }}" style="width:100%">
+      </div>
+    <div class="slideshow-container">
+      <div class="mySlides4">
+        <div class="numbertext">4 / 7</div>
+        <img src="{{ 'assets/img/Physical Art/People/PXL_20230930_023140245.MP~2.jpg' | relative_url }}" style=width:100%">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">5 / 7</div>
+        <img src="{{ 'assets/img/Physical Art/People/PXL_20250226_033140807.MP~2.jpg' | relative_url }}" style="width:100%">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">6 / 7</div>
+        <img src="{{ 'assets/img/Physical Art/People/PXL_20250226_033225342.MP~2.jpg' | relative_url }}" style="width:100%">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">7 / 7</div>
+        <img src="{{ 'assets/img/Physical Art/People/PXL_20250226_033247390.MP~2.jpg' | relative_url }}" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1,3)">&#10094</a>
+      <a class="next" onclick="plusSlides(1,3)">&#10095</a>
+     </div>
+  </div>
+
+  <div class="Desc8">
+    <h3>People</h3>
+    <p>Pencil</p>
+  </div>
+    
 </div>
-  
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
+    
+ <script>
+    var slideIndex = [1,1,1,1];
+    var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+    showsSlides(1, 3);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";
+    }
+    </script>
 
 </body>
 </html> 
