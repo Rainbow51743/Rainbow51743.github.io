@@ -19,8 +19,7 @@ title: Architecture
     "Desc6 Slide6 Slide6" 
     "Slide7 Slide7 Desc7"
     "Desc8 Slide8 Slide8"
-    "Slide9 Slide9 Desc9"
-    "Desc10 Slid10 Slid10" ;
+    "Slide9 Slide9 Desc9" ;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5px;
   background-color: #FFFFFF;
@@ -88,12 +87,7 @@ title: Architecture
 .myGrid > div.Desc9 {
   grid-area: Desc9;
 }
-.myGrid > div.Slide10 {
-  grid-area: Slide10;
-}
-.myGrid > div.Desc10 {
-  grid-area: Desc10;
-}
+
 </style>
 </head>
 <body>
@@ -104,7 +98,7 @@ title: Architecture
 <style>
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9, .mySlides10 {display: none}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9 {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -183,7 +177,7 @@ img {vertical-align: middle;}
   </div>
 
   <div class="Desc1">
-    <h3>Vertical House</h3>
+    <h3>Tree Thing</h3>
     <p>Enter description here</p>
   </div>
 
@@ -240,7 +234,7 @@ img {vertical-align: middle;}
   </div>
 
   <div class="Desc2">
-    <h3>Sectional House</h3> 
+    <h3>Vertical House</h3> 
     <p>Enter sectional desc here!</p>
   </div>
 
@@ -272,18 +266,267 @@ img {vertical-align: middle;}
   </div>
 
   <div class="Desc3">
-    <h3>Vertical House</h3>
+    <h3>Sectional House</h3>
     <p>Enter description here</p>
   </div>
+  
+  <div class="Slide4">
+    <div class="slideshow-container">
+      <div class="mySlides4">
+        <div class="numbertext">1 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_1.png' | relative_url }}" style=width:100%">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">2 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_2.png' | relative_url }}" style="width:100%">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">3 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_3.png' | relative_url }}" style="width:100%">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">4 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_4.png' | relative_url }}" style="width:100%">
+      </div>
+ 
+      <a class="prev" onclick="plusSlides(-1,3)">&#10094</a>
+      <a class="next" onclick="plusSlides(1,3)">&#10095</a>
+    </div>
+  </div>
+
+  <div class="Desc4">
+    <h3>The Mines</h3>
+    <p>Enter description here</p>
+  </div>
+
+  <div class="Slide5">
+    <div class="slideshow-container">
+      <div class="mySlides5">
+        <div class="numbertext">1 / 9</div>
+        <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_1.png' | relative_url }}" style=width:100%">
+      </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">2 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_2.png' | relative_url }}" style="width:100%">
+    </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">3 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_3.png' | relative_url }}" style="width:100%">
+    </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">4 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_4.png' | relative_url }}" style="width:100%">
+    </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">5 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_5.png' | relative_url }}" style=width:100%">
+    </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">6 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_6.png' | relative_url }}" style="width:100%">
+    </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">7 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_7.png' | relative_url }}" style="width:100%">
+    </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">8 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_8.png' | relative_url }}" style="width:100%">
+    </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">9 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_9.png' | relative_url }}" style="width:100%">
+    </div>
+ 
+    <a class="prev" onclick="plusSlides(-1,4)">&#10094</a>
+    <a class="next" onclick="plusSlides(1,4)">&#10095</a>
+    </div>
+  </div>
+
+  <div class="Desc5">
+    <h3>Tulane Depot</h3> 
+    <p>Enter sectional desc here!</p>
+  </div>
+
+  <div class="Slide6">
+    <div class="slideshow-container">
+      <div class="mySlides6">
+        <div class="numbertext">1 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_1.png' | relative_url }}" style=width:100%">
+      </div>
+
+      <div class="mySlides6">
+        <div class="numbertext">2 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_2.png' | relative_url }}" style="width:100%">
+      </div>
+
+      <div class="mySlides6">
+        <div class="numbertext">3 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_3.png' | relative_url }}" style="width:100%">
+      </div>
+
+      <div class="mySlides6">
+        <div class="numbertext">4 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_4.png' | relative_url }}" style="width:100%">
+      </div>
+ 
+      <a class="prev" onclick="plusSlides(-1,5)">&#10094</a>
+      <a class="next" onclick="plusSlides(1,5)">&#10095</a>
+    </div>
+  </div>
+
+  <div class="Desc6">
+    <h3>Train</h3>
+    <p>Enter description here</p>
+  </div>  
 </div>
   
+  <div class="Slide7">
+    <div class="slideshow-container">
+      <div class="mySlides7">
+        <div class="numbertext">1 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_1.png' | relative_url }}" style=width:100%">
+      </div>
+
+      <div class="mySlides7">
+        <div class="numbertext">2 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_2.png' | relative_url }}" style="width:100%">
+      </div>
+
+      <div class="mySlides7">
+        <div class="numbertext">3 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_3.png' | relative_url }}" style="width:100%">
+      </div>
+
+      <div class="mySlides7">
+        <div class="numbertext">4 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_4.png' | relative_url }}" style="width:100%">
+      </div>
+ 
+      <a class="prev" onclick="plusSlides(-1,6)">&#10094</a>
+      <a class="next" onclick="plusSlides(1,6)">&#10095</a>
+    </div>
+  </div>
+
+  <div class="Desc7">
+    <h3>Miro</h3>
+    <p>Enter description here</p>
+  </div>
+
+  <div class="Slide8">
+    <div class="slideshow-container">
+      <div class="mySlides8">
+        <div class="numbertext">1 / 9</div>
+        <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_1.png' | relative_url }}" style=width:100%">
+      </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">2 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_2.png' | relative_url }}" style="width:100%">
+    </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">3 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_3.png' | relative_url }}" style="width:100%">
+    </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">4 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_4.png' | relative_url }}" style="width:100%">
+    </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">5 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_5.png' | relative_url }}" style=width:100%">
+    </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">6 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_6.png' | relative_url }}" style="width:100%">
+    </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">7 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_7.png' | relative_url }}" style="width:100%">
+    </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">8 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_8.png' | relative_url }}" style="width:100%">
+    </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">9 / 9</div>
+      <img src="{{ 'assets/img/Sectional Home/Lawson-Sectional Home V7_Page_9.png' | relative_url }}" style="width:100%">
+    </div>
+ 
+    <a class="prev" onclick="plusSlides(-1,7)">&#10094</a>
+    <a class="next" onclick="plusSlides(1,7)">&#10095</a>
+    </div>
+  </div>
+
+  <div class="Desc8">
+    <h3>UrbanBuild</h3> 
+    <p>Enter sectional desc here!</p>
+  </div>
+
+  <div class="Slide9">
+    <div class="slideshow-container">
+      <div class="mySlides6">
+        <div class="numbertext">1 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_1.png' | relative_url }}" style=width:100%">
+      </div>
+
+      <div class="mySlides9">
+        <div class="numbertext">2 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_2.png' | relative_url }}" style="width:100%">
+      </div>
+
+      <div class="mySlides9">
+        <div class="numbertext">3 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_3.png' | relative_url }}" style="width:100%">
+      </div>
+
+      <div class="mySlides9">
+        <div class="numbertext">4 / 4</div>
+        <img src="{{ 'assets/img/Vertical Home/Lawson-Vertical Home V4_Page_4.png' | relative_url }}" style="width:100%">
+      </div>
+ 
+      <a class="prev" onclick="plusSlides(-1,8)">&#10094</a>
+      <a class="next" onclick="plusSlides(1,8)">&#10095</a>
+    </div>
+  </div>
+
+  <div class="Desc9">
+    <h3>NAWIC</h3>
+    <p>Enter description here</p>
+  </div>  
+</div>
+    
  <script>
-    var slideIndex = [1,1,1];
-    var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+    var slideIndex = [1,1,1,1,1,1,1,1,1];
+    var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9"]
     showSlides(1, 0);
     showSlides(1, 1);
     showSlides(1, 2);
-
+    showSlides(1, 3);
+    showSlides(1, 4);
+    showSlides(1, 5);
+    showSlides(1, 6);
+    showSlides(1, 7);
+    showSlides(1, 8);
+   
     function plusSlides(n, no) {
       showSlides(slideIndex[no] += n, no);
     }
