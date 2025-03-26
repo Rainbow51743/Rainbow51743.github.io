@@ -3,21 +3,10 @@ layout: post
 ---
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Grid Background</title>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-        }
-        
 .background-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates flexible columns */
-    grid-template-rows: auto; /* Allows the rows to grow based on content */
-    gap: 5px; /* Space between images */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Flexible grid */
+    gap: 5px;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -31,36 +20,29 @@ layout: post
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.5; /* Adjust transparency if needed */
 }
-
-    </style>
-</head>
 <body>
+  <!-- Background Image Grid -->
+  <div class="background-grid">
+    <img src="{{ 'assets/img/architecture/Vertical Home/Lawson-Vertical Home V4_Page_4.png' | relative_url }}">
+    <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.5.1.png' | relative_url }}">
+    <img src="{{ 'assets/img/Physical Art/Duck painting.jpg' | relative_url }}">
+    <img src="{{ 'assets/img/architecture/Tulane Depot/Lawson- Tulane Depot for Portfolio_Page_8.png' | relative_url }}">
+    <img src="{{ 'assets/img/Graphic Design/Copy of 12 Galaxy Inspired Looks.jpg' | relative_url }}">
+    <img src="{{ 'assets/img/Physical Art/Constructing the Image/Lawson-1.1A-Constructing the ImageV4_Page_5.png' | relative_url }}">
+    <img src="{{ 'assets/img/architecture/Tree thing/Lawson_The Path, The Room, and The Window FOR PORTFOLIO_Page_7.png' | relative_url }}">
+    <img src="{{ 'assets/img/Graphic Design/Grad announcement mock-up 2 5x7.png' | relative_url }}">
+    <img src="{{ 'assets/img/Graphic Design/A Losing Battle- V2.png' | relative_url }}">
+  </div>
 
-    <div class="background-grid">
-<img src="{{ 'assets/img/architecture/Vertical Home/Lawson-Vertical Home V4_Page_4.png' | relative_url }}">
-<img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.5.1.png' | relative_url }}">
-<img src="{{ 'assets/img/Physical Art/Duck painting.jpg' | relative_url }}">
-<img src="{{ 'assets/img/architecture/Tulane Depot/Lawson- Tulane Depot for Portfolio_Page_8.png' | relative_url }}">
-<img src="{{ 'assets/img/Graphic Design/Copy of 12 Galaxy Inspired Looks.jpg' | relative_url }}">
-<img src="{{ 'assets/img/Physical Art/Constructing the Image/Lawson-1.1A-Constructing the ImageV4_Page_5.png' | relative_url }}">
-<img src="{{ 'assets/img/architecture/Tree thing/Lawson_The Path, The Room, and The Window FOR PORTFOLIO_Page_7.png' | relative_url }}">
-<img src="{{ 'assets/img/Graphic Design/Grad announcement mock-up 2 5x7.png' | relative_url }}">
-<img src="{{ 'assets/img/Graphic Design/A Losing Battle- V2.png' | relative_url }}">
-<img src="{{ 'assets/img/Physical Art/Hand2.jpg' | relative_url }}">
-<img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_17.png' | relative_url }}">
-<img src="{{ 'assets/img/Graphic Design/Lawson-22bday just poster.png' | relative_url }}">
-<img src="{{ 'assets/img/Physical Art/Architecture/PXL_20250226_033001556.MP~2.jpg' | relative_url }}">
-<img src="{{ 'assets/img/architecture/Urbanbuild/Model 1.png' | relative_url }}">
-<img src="{{ 'assets/img/Graphic Design/Lawson-ShelvingV3.1PURSE.png' | relative_url }}">
-<img src="{{ 'assets/img/Physical Art/Lawson_Vintage_Tool.png' | relative_url }}">
-<img src="{{ 'assets/img/architecture/TRAIN/Lawson_Savanna_Minguito_drawing small Space-Resubmission portfolio_Page_2.png' | relative_url }}">
-<img src="{{ 'assets/img/architecture/Miro OG/Lawson- Friday Review 9-20_Page_10.png' | relative_url }}">
-
-    </div>
-
-    <h1>yap yap yap yap</h1>
-  <p> yap yap yap yap yap yap</p>
-
+  <!-- Main Content -->
+  <h1>Savanna Lawson's Portfolio</h1>
+  <hr>
+  <div>Note: This website performs best when viewed on a computer or a mobile browser in "desktop" mode</div>
+  <br>
+  <p>
+    I have created this website as a way to share my portfolio without anyone needing to download and view a colossal file...
+  </p>
 </body>
 </html>
